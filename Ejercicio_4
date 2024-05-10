@@ -1,1 +1,92 @@
+//Leer el archivo e imprimir por pantalla todo el contenido del archivo.
+//Imprimir "Esta clase tiene X estudiantes" que coincidirá con el n° de líneas del archivo.
+//Calcular e imprimir la edad media de los estudiantes, redondeando a un número entero.
+///Calcular la nota media de la clase, la máxima y la mínima (con 2 decimales).
+//Escribir en el mismo archivo, al final dejando una linea como separador, y en 3 líneas separadas, esos valores: n° estudiantes, edad media y nota media
+//Por último crear un archivo nuevo llamado "informe-clase.txt" donde escribáis lo mismo que en el apartado anterior.
+
+
+package Lectura_y_escritura_en_un_archivo_CSV;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class Ejercicio_4 {
+      
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_CYAN = "\u001B[36m";
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);      
+        while (true) {
+            System.out.println("");
+            System.out.println("|-----------" + ANSI_CYAN + "MENU" + ANSI_RESET + "-------------|");
+            System.out.println("|1. " + ANSI_GREEN + "Imprimir l" + ANSI_RESET + "               |");
+            System.out.println("|2. " + ANSI_GREEN + "Calcular1" + ANSI_RESET + "                |");
+            System.out.println("|3. " + ANSI_GREEN +"calcular2"+ANSI_RESET    + "                |");
+            System.out.println("|4. " + ANSI_GREEN + "Archivo con estructura" + ANSI_RESET + "   |");
+            System.out.println("|5. ;" + ANSI_YELLOW +"Crear (informe-clase.txt)"+ ANSI_RESET + "|");
+            System.out.println("|6. ;" + ANSI_YELLOW +"SALIR"+ ANSI_RESET + "                    |");
+            System.out.print("|------------(1-6)-----------|");
+            System.out.println("");
+    
+            if (scanner.hasNextInt()) {
+                int opcion = scanner.nextInt();
+            switch (opcion) {
+                case 1:
+                       imprimirNormal();
+                    break;
+
+                case 2:
+                        Calcular1();
+                    break;
+
+                case 3: 
+                        Calcular2();
+                    break;
+
+                case 4: 
+                        ArchivoEstructurado();
+                    break;
+                    
+
+                case 6:
+                    System.out.println("Hasta pronto!");
+                    System.exit(0);
+
+                default:
+                    System.out.println("Introduce un número entre (1-5)");
+                    break;
+                    }
+                }
+            }
+        
+            }
+            static void imprimirNormal() {
+                System.out.println("");
+                System.out.println("");
+                System.out.println("|---------------" + ANSI_YELLOW + "El Archivo contiene" + ANSI_RESET + "---------------|" + ANSI_RESET);
+          
+
+            }
+
+            static void Calcular1() {
+
+            }
+
+            static void Calcular2() {
+
+            }
+
+            static void ArchivoEstructurado () {
+
+            }
+
+    }
+
 
